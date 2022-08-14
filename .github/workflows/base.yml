@@ -38,3 +38,16 @@ jobs:
         run: |
           $phrase  = "ca va ?"
           Write-Host $phrase
+          
+      - name: Get specific changed files
+        id: changed-files-specific
+        uses: tj-actions/changed-files@v25
+        with:
+          files: |
+            **/*_brut.md
+            
+      - name: List all changed files
+        run: |
+          for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
+            echo "$file was changed"
+          done
