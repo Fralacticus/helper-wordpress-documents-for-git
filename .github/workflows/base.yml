@@ -58,3 +58,14 @@ jobs:
           #foreach ($file in ${{ steps.changed-files-specific.outputs.all_changed_files }}){
             #Write-Host "$file was changed"
           #}
+          
+          
+      - name: Get changed files origi
+        id: changed-files
+        uses: tj-actions/changed-files@v25
+
+      - name: List all changed files origi
+        run: |
+          for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
+            echo "$file was changed"
+          done
