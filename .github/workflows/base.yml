@@ -53,7 +53,9 @@ jobs:
         run: |
           for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
             echo "$file was changed"
-            echo "$(cat $file)"
+            dirname = `dirname "$fname"`
+            echo dirname
+            #echo "$(cat $file)"
           done
           
           
