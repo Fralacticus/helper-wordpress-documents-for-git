@@ -47,7 +47,7 @@ jobs:
             **/*_brut.md
             
       - name: List all changed files
-        run: |
-          foreach ($file in ${{ steps.changed-files-specific.outputs.all_changed_files }}){
-            Write-Host "$file was changed"
-          }
+        run: ${{ github.action_path }}/script.ps1 -liste ${{ steps.changed-files-specific.outputs.all_changed_files }}
+          #foreach ($file in ${{ steps.changed-files-specific.outputs.all_changed_files }}){
+            #Write-Host "$file was changed"
+          #}
