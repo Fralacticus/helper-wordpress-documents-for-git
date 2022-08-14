@@ -55,7 +55,7 @@ jobs:
             echo "$file was changed"            
             echo "dossier : $(dirname $file)"
             echo "fichier : $(basename $file)"
-            newdir= `dirname $file`
+            newdir= echo "$(dirname $file)"
             echo $newdir
             #echo "$(cat $file)"
           done
