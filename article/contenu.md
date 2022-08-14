@@ -11,7 +11,7 @@ String nomBaseFichierSprite = "${adresseSpriteGokuBlesse_Debut.toRadixString(16)
 ```  
 ![pigeon](https://raw.githubusercontent.com/Fralacticus/testmarkdown/main/_images/pigeon2.png)
   
-  <img title="" src="https://raw.githubusercontent.com/Fralacticus/testmarkdown/main/_images/pigeon2.png" alt="" width="77">
+  <img title="" src="https://raw.githubusercontent.com/Fralacticus/testmarkdown/main/_images/pigeon2.png" alt="" style="zoom:25%;">
   
 | Adressse     | Valeur       | Animation        |
 | ------------ | ------------ | ---------------- |
