@@ -48,6 +48,6 @@ jobs:
             
       - name: List all changed files
         run: |
-          for file in ${{ steps.changed-files-specific.outputs.all_changed_files }}; do
+          foreach ($file in ${{ steps.changed-files-specific.outputs.all_changed_files }}){
             Write-Host "$file was changed"
-          done
+          }
