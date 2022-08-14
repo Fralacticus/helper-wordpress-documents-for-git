@@ -42,32 +42,8 @@ jobs:
           $phrase  = "ca va ?"
           Write-Host $phrase
         shell: pwsh
-          
-      - name: Get specific changed files
-        id: changed-files-specific
-        uses: tj-actions/changed-files@v25        
-        with:
-          files: |
-            **/*_brut.md
-           
-          
-            
-      - name: List all changed files
-        #run: ${{ github.action_path }}/script.ps1 -liste ${{ steps.changed-files-specific.outputs.all_changed_files }}
-        #run : '& $env:GITHUB_ACTION_PATH/script.ps1 -liste ${{ steps.changed-files-specific.outputs.all_changed_files }}'
-        run: |        
-          $liste = ${{ steps.changed-files-specific.outputs.all_changed_files }}
-          foreach($file in $liste){
-            Write-Host $file 
-          }                  
-        shell: pwsh
-          #foreach ($file in ${{ steps.changed-files-specific.outputs.all_changed_files }}){
-            #Write-Host "$file was changed"
-          #}
-          
-      
-      
-          
+    
+                          
           
       - name: Get changed files origi
         id: changed-files
@@ -77,4 +53,8 @@ jobs:
         run: |
           for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
             echo "$file was changed"
+            echo "$(cat my_file.txt)"
           done
+          
+          
+      
