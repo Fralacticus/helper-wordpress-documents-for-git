@@ -8,8 +8,7 @@ int adresseNouveauSprite = 0x7b89c0;
 octetsRomModif.setAll(adresseNouveauSprite, octetsModifFinal);
 // Sauvegarde des données du sprite Goku blessé
 String nomBaseFichierSprite = "${adresseSpriteGokuBlesse_Debut.toRadixString(16).padLeft(8, "0")}_sprite";  
-```
-  
+```  
 ![pigeon](https://raw.githubusercontent.com/Fralacticus/testmarkdown/main/_images/pigeon2.png)
   
 | Adressse     | Valeur       | Animation        |
