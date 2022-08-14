@@ -54,8 +54,8 @@ jobs:
           for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
             echo "$file was changed"            
             echo "dossier : $(dirname $file)"
-            echo "dossier : $(basename $file)"
-            newname= $(dirname $file)
+            echo "fichier : $(basename $file)"
+            newdir= `dirname $file`
             echo $newdir
             #echo "$(cat $file)"
           done
