@@ -57,7 +57,9 @@ jobs:
         #run : '& $env:GITHUB_ACTION_PATH/script.ps1 -liste ${{ steps.changed-files-specific.outputs.all_changed_files }}'
         run: |        
           $liste = ${{ steps.changed-files-specific.outputs.all_changed_files }}
-          Write-Host $liste         
+          foreach($file in $liste){
+            Write-Host $file 
+          }                  
         shell: pwsh
           #foreach ($file in ${{ steps.changed-files-specific.outputs.all_changed_files }}){
             #Write-Host "$file was changed"
