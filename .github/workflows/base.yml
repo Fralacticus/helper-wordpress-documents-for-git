@@ -56,7 +56,7 @@ jobs:
             echo "dossier : $(dirname $file)"
             echo "fichier : $(basename $file)"
             newpath= echo "$(echo $file | sed "s/_brut//g")"
-            echo $newpath
+            echo "nouveau fichier : $newpath"
             #echo "$(cat $file)"
           done
           
