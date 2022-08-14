@@ -16,4 +16,6 @@ param(
     $listeFichiers
 )
 
+Write-Host "Debut du programme"
+
 write-host $listeFichiers
