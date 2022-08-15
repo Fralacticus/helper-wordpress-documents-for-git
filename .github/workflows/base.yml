@@ -58,8 +58,12 @@ jobs:
             newpath= echo "$(echo $file | sed "s/_brut//g")"
             echo "nouveau fichier : $newpath"
             sed 's/assets/bilou/g' file > echo "$(echo $file | sed "s/_brut//g")"
-            #echo "$(cat $file)"
+            
+            echo "-> On lance le script sh"
+            ${{ github.action_path }}/create-summary.sh file            
           done
+      
+      
           
           
       
