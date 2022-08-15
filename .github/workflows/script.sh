@@ -10,8 +10,8 @@ set -xe
   #echo "dossier : $(dirname $i)"
 #done
 
-ancien =  '(assets/'
-nouveau =  'https://raw.githubusercontent.com/Fralacticus/articles_md/main/$(dirname $1)/assets/'
+ancien='(assets/'
+nouveau='https://raw.githubusercontent.com/Fralacticus/articles_md/main/$(dirname $1)/assets/'
 
 echo "partie principale: "
 #cd $1
