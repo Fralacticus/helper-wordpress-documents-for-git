@@ -10,14 +10,13 @@ set -xe
   #echo "dossier : $(dirname $i)"
 #done
 
-dirname= dirname "$i"
-foldername= basename "$dirname"
+newpath= echo "$(echo $file | sed "s/_brut//g")"
 echo "partie principale: "
 #cd $1
-cat $1 > "$foldername"/Summary.md
+cat $1 > $newpath
 
 git config --global user.email "fralacticus@gmail.com"
 git config --global user.name "fralacticus"
-git add "$(dirname $i)/Summary.md"
+git add $newpath
 git commit -m "Update Summary.md at $(date)"
 git push origin main
