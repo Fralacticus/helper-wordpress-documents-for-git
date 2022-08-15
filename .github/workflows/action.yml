@@ -56,4 +56,4 @@ jobs:
         run: |
           #ls ${{ github.workspace }}
           #find ${{ github.workspace }} -type f 
-          (cd ${{ github.workspace }} && find -type f ; )
+          (cd ${{ github.workspace }} && find * -type f ; )
