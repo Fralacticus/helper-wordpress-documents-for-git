@@ -61,7 +61,7 @@ jobs:
             #chmod +x ${{ github.action_path }}/script.sh
             #${{ github.action_path }}/script.sh file          
             chmod +x "${GITHUB_WORKSPACE}/.github/workflows/script.sh"
-            ${GITHUB_WORKSPACE}/.github/workflows/script.sh "$GITHUB_WORKSPACE/$file"
+            ${GITHUB_WORKSPACE}/.github/workflows/script.sh "$file"
           done
       
       
