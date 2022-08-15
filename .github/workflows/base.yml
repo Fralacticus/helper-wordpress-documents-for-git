@@ -35,7 +35,7 @@ jobs:
         uses: tj-actions/changed-files@v25
         with:
           files: | 
-            **/*.md
+            **/*_brut.md
             
 
       - name: Traitement de tous les fichiers changés
