@@ -7,10 +7,10 @@ set -e
 
 echo "------- Début du script --------"
 
-echo "-> On définie le du nom du nouveau fichier à partir de l'original en retirant le suffixe _brut"
+echo "-> On définit le du nom du nouveau fichier à partir de l'original en retirant le suffixe _brut"
 destFic="$(echo $1 | sed "s/_brut//g")"
 
-echo "-> On définie les motifs pour convertir les liens d'images relatifs au dossier assets en absolus"
+echo "-> On définit les motifs pour convertir les liens d'images relatifs au dossier assets en absolus"
 ancien='(assets/'
 nouveau="(https://raw.githubusercontent.com/${GITHUB_REPOSITORY_OWNER}/${GITHUB_REPOSITORY##*/}/${GITHUB_REF_NAME}/$(dirname $1)/assets/"
 
