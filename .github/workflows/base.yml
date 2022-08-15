@@ -33,6 +33,10 @@ jobs:
       - name: Obtention des fichiers changés
         id: changed-files
         uses: tj-actions/changed-files@v25
+        with:
+          files: | 
+            **/*.md
+            
 
       - name: Traitement de tous les fichiers changés
         run: |
