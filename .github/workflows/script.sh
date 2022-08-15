@@ -20,7 +20,7 @@ nouveau2='src='\""https://raw.githubusercontent.com/${GITHUB_REPOSITORY_OWNER}/$
 echo "-> On remplace les motifs et on écrie le nouveau fichier"
 cat $1 | sed "s|${ancien}|${nouveau}|g" | sed "s|${ancien2}|${nouveau2}|g" > $destFic
 
-echo "-> On met à jour le dépôt git avec ajout ou écrasement du nouveau fichier"
+echo "-> On met à jour le dépôt git avec le fichier : ${destFic}"
 git config --global user.email "fralacticus@gmail.com"
 git config --global user.name "fralacticus"
 git add $destFic
