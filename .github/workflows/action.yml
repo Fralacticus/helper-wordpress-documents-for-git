@@ -49,3 +49,25 @@ jobs:
             ${GITHUB_WORKSPACE}/.github/workflows/script.sh "$file" "$(echo $file | sed "s/_brut//g")"
             echo "#############################################################"
           done   
+          
+          
+          
+      - name: Fetch action
+        if: ${{ github.event_name != 'push' }}
+        id: pl
+        uses: Rishabh510/Path-lister-action@master
+        with:
+          path: "/"
+          type: ".md"
+
+      - name: Output results
+        if: ${{ github.event_name != 'push' }}
+        run: |
+          echo "Found ${{ steps.pl.outputs.path_count }} file(s) with this extension:"
+          for i in ${{ steps.pl.outputs.paths }}; do
+          echo $i
+          done
+          
+      - name: List files in the repository
+        run: |
+          ls ${{ github.workspace }}
