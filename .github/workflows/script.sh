@@ -11,7 +11,8 @@ set -xe
 #done
 
 ancien='(assets/'
-nouveau='https://raw.githubusercontent.com/Fralacticus/articles_md/main/$(dirname $1)/assets/'
+nouveau='https://raw.githubusercontent.com/Fralacticus/articles_md/main/TODO/assets/'
+#nouveau='https://raw.githubusercontent.com/Fralacticus/articles_md/main/$(dirname $1)/assets/'
 
 # Notice sed -> s/motif/substitut/g
 
