@@ -10,6 +10,8 @@ on:
     branches: [ "main" ]
     #paths:
       #- '**/*_brut.md'
+  pull_request:
+    branches: [ "main" ]
 
 
   # Permet de lancer le workflow manuellement depuis la page Actions
