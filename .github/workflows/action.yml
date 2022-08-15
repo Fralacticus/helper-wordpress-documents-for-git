@@ -1,4 +1,4 @@
-name: CI
+name: DocumentsForGitHelper
 
 # Contrôle quand le worflow se déclenche
 on:
