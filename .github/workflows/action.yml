@@ -46,9 +46,4 @@ jobs:
             chmod +x "${GITHUB_WORKSPACE}/.github/workflows/script.sh"
             ${GITHUB_WORKSPACE}/.github/workflows/script.sh "$file" "$(echo $file | sed "s/_brut//g")"
             echo "#############################################################"
-          done
-      
-      
-          
-          
-      
+          done   
