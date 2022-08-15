@@ -14,7 +14,7 @@ dirname= dirname "$i"
 foldername= basename "$dirname"
 echo "partie principale: "
 #cd $1
-cat $1 > "foldername/Summary.md"
+cat $1 > "$foldername"/Summary.md
 
 git config --global user.email "fralacticus@gmail.com"
 git config --global user.name "fralacticus"
