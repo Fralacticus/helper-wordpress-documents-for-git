@@ -51,10 +51,12 @@ jobs:
 
       - name: Traitement de tous les fichiers changés       
         run: |
-          if [ ${{ github.event_name == 'push' }} ]
+          if [ ${{ github.event_name }} == 'push' ]
           then
+            echo "Mode automatique sur push"
             listeFichiers=${{ steps.changed-files.outputs.all_changed_files }}
           else
+            echo "Mode manuel"
             listeFichiers=$(cd ${{ github.workspace }} && find * -type f -name "*_brut.md" ; )
           fi
           for file in $listeFichiers; do

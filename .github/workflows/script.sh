@@ -3,7 +3,7 @@
 #########
 # Affiche chaque commande exécutée avec ses arguments
 # Sort du script dès qu’une erreur est rencontrée (retour différent de 0)
-set -e
+set -xe
 
 echo "------- Début du script --------"
 
@@ -24,7 +24,7 @@ echo "-> On met à jour le dépôt git avec le fichier : ${destFic}"
 git config --global user.email "fralacticus@gmail.com"
 git config --global user.name "fralacticus"
 git add $destFic
-git commit -m "Mise à jour le $(date)"
+git commit -a -m "Mise à jour le $(date)"
 git push origin main
 
 echo "------- Fin du script --------"
