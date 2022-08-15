@@ -17,7 +17,6 @@ rddee(
 77777rruu_
 edrr
 e'__ee""
--ee
-urr
+-ee"""
 r
 rr
