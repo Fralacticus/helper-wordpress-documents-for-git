@@ -11,7 +11,7 @@ set -xe
 #done
 
 ancien = "(assets/"
-nouveau = "https://raw.githubusercontent.com/Fralacticus/articles_md/main/$(dirname $1)/assets/)"
+nouveau = "https://raw.githubusercontent.com/Fralacticus/articles_md/main/$(dirname $1)/assets/"
 
 echo "partie principale: "
 #cd $1
