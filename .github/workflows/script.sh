@@ -28,15 +28,12 @@ git add -A
 
 if ! git diff-index --quiet HEAD
 then
-  echo "On passe le commit"
-  echo "Commit:"
+  echo "ON COMMIT (car fichier différent) :"  
   git commit -m "Mise à jour le $(date)"
   echo "Push"
   git push origin main
 else
-  echo "On ne passe pas le commit, car aucune différence"  
+  echo "ON NE COMMIT PAS (car fichier identique)"   
 fi
-
-
 
 echo "------- Fin du script --------"
