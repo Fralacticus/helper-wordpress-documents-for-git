@@ -10,6 +10,8 @@ for i in $(find . -name '*_brut.md') ; do
   echo "dossier : $(dirname $i)"
 done
 
+
+echo "partie principale: "
 cd $1
 (
 cat $1 |  echo
