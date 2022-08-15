@@ -55,4 +55,4 @@ jobs:
       - name: List files in the repository
         run: |
           #ls ${{ github.workspace }}
-          find ${{ github.workspace }} -type f 
+          find ${GITHUB_REPOSITORY##*/} -type f 
