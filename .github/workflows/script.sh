@@ -11,7 +11,7 @@ set -xe
 #done
 
 ancien='(assets/'
-nouveau="(https://raw.githubusercontent.com/${GITHUB_REPOSITORY_OWNER}/articles_md/main/$(dirname $1)/assets/"
+nouveau="(https://raw.githubusercontent.com/${GITHUB_REPOSITORY_OWNER}/${GITHUB_REPOSITORY##*/}/${GITHUB_REF_NAME}/$(dirname $1)/assets/"
 #nouveau='https://raw.githubusercontent.com/Fralacticus/articles_md/main/$(dirname $1)/assets/'
 
 # Notice sed -> s/motif/substitut/g
