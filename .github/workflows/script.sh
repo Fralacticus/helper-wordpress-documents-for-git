@@ -24,7 +24,7 @@ echo "-> On met à jour le dépôt git avec le fichier : ${destFic}"
 git config --global user.email "fralacticus@gmail.com"
 git config --global user.name "fralacticus"
 git add $destFic
-git commit -m "Mise à jour $(destFic) le $(date)"
+git commit -m "Mise à jour le $(date)"
 git push origin main
 
 echo "------- Fin du script --------"
