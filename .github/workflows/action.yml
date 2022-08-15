@@ -32,10 +32,11 @@ jobs:
       # Vérifie les fichiers qui ont changées (<=> ajoutés, copiés, modifiés et renommés)
       - name: Obtention des fichiers changés
         id: changed-files
-        uses: tj-actions/changed-files@v25
+        uses: tj-actions/changed-files@v25       
         with:
           files: | 
             **/*_brut.md
+          since_last_remote_commit: "true"
             
 
       - name: Traitement de tous les fichiers changés
