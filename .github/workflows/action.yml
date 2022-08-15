@@ -52,18 +52,6 @@ jobs:
           
           
           
-      - name: Fetch action
-        if: ${{ github.event_name != 'push' }}
-        id: pl
-        uses: Rishabh510/Path-lister-action@master
-        with:
-          path: "${GITHUB_WORKSPACE}"
-          type: ".md"
-
-      - name: Output results
-        if: ${{ github.event_name != 'push' }}
+      - name: List files in the repository
         run: |
-          echo "Found ${{ steps.pl.outputs.path_count }} file(s) with this extension:"
-          for i in ${{ steps.pl.outputs.paths }}; do
-          echo $i
-          done    
+          ls ${{ github.workspace }}
