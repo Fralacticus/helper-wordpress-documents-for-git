@@ -51,7 +51,7 @@ jobs:
 
       - name: Traitement de tous les fichiers changés       
         run: |
-          if [ ${{ github.event_name == 'push' }} ]
+          if [ ${{ github.event_name }} == 'push' ]
           then
             listeFichiers=${{ steps.changed-files.outputs.all_changed_files }}
           else
