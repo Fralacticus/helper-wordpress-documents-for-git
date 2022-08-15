@@ -9,9 +9,7 @@ on:
   push:
     branches: [ "main" ]
     #paths:
-      #- '**/*_brut.md'
-  pull_request:
-    branches: [ "main" ]
+      #- '**/*_brut.md'  
 
 
   # Permet de lancer le workflow manuellement depuis la page Actions
@@ -29,7 +27,7 @@ jobs:
       # Extraction du dépot dans $GITHUB_WORKSPACE pour que le job puisse y accéder
       - uses: actions/checkout@v3
         with:
-          fetch-depth: 0                          
+          fetch-depth: 2                          
           
       # Vérifie les fichiers qui ont changées (<=> ajoutés, copiés, modifiés et renommés)
       - name: Obtention des fichiers changés
