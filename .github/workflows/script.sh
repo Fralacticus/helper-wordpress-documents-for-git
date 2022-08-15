@@ -5,14 +5,14 @@
 # also exit on any error
 set -xe
 
-for i in $(find . -name '*_brut.md') ; do
-  echo "$i"
-  echo "dossier : $(dirname $i)"
-done
+#for i in $(find . -name '*_brut.md') ; do
+  #echo "$i"
+  #echo "dossier : $(dirname $i)"
+#done
 
 
 echo "partie principale: "
-cd $1
+#cd $1
 (
 cat $1 |  echo
 
