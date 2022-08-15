@@ -13,13 +13,10 @@ set -xe
 
 echo "partie principale: "
 #cd $1
-(
-cat $1 |  echo
-
-) > Summary.md
+cat $1 > "$(dirname $i)/Summary.md"
 
 git config --global user.email "fralacticus@gmail.com"
 git config --global user.name "fralacticus"
-git add Summary.md
+git add "$(dirname $i)/Summary.md"
 git commit -m "Update Summary.md at $(date)"
 git push origin main
