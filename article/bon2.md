@@ -11,12 +11,12 @@ ere
 rr-
 yy
 eeereei
-salut https://raw.githubusercontent.com/Fralacticus/articles_md/main/$(dirname $1)/assets/}o
+
 er'dç
 rddee(
 77777rruu_ ![pigeon](https://raw.githubusercontent.com/Fralacticus/articles_md/main/Article_teintes_rouges_degats/assets/pigeon2.png)
-edrre
+edrre__
 e'__ee""
-![pigeon]https://raw.githubusercontent.com/Fralacticus/articles_md/main/$(dirname $1)/assets/}pigeon2.png "coucou") 
+![pigeon]https://raw.githubusercontent.com/Fralacticus/articles_md/main/article/assets/}pigeon2.png "coucou") 
 r
 rr
