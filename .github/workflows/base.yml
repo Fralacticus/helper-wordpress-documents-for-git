@@ -29,27 +29,18 @@ jobs:
         with:
           fetch-depth: 0                          
           
-      # Vérifie les fichiers qui ont changées
-      - name: Get changed files
+      # Vérifie les fichiers qui ont changées (<=> ajoutés, copiés, modifiés et renommés)
+      - name: Obtention des fichiers changés
         id: changed-files
         uses: tj-actions/changed-files@v25
 
-      - name: List all changed files
+      - name: Traitement de tous les fichiers changés
         run: |
           for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
-            echo "$file was changed"            
-            echo "dossier : $(dirname $file)"
-            echo "fichier : $(basename $file)"
-            newpath= echo "$(echo $file | sed "s/_brut//g")"
-            echo "nouveau fichier : $newpath"
-            #sed 's/assets/bilou/g' file > echo "$(echo $file | sed "s/_brut//g")"
-            
-            echo "-> On lance le script sh"
-            #${{ github.action_path }}
-            #chmod +x ${{ github.action_path }}/script.sh
-            #${{ github.action_path }}/script.sh file          
+            echo "################ TRAITEMENT DU FICHIER $file ################"   
             chmod +x "${GITHUB_WORKSPACE}/.github/workflows/script.sh"
             ${GITHUB_WORKSPACE}/.github/workflows/script.sh "$file" "$(echo $file | sed "s/_brut//g")"
+            echo "#############################################################"
           done
       
       
