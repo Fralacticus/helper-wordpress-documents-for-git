@@ -23,8 +23,8 @@ cat $1 | sed "s|${ancien}|${nouveau}|g" | sed "s|${ancien2}|${nouveau2}|g" > $de
 echo "-> On met à jour le dépôt git avec le fichier : ${destFic}"
 git config --global user.email "fralacticus@gmail.com"
 git config --global user.name "fralacticus"
-git add $destFic
-
+#git add $destFic
+git add -A
 
 if ! git diff-index --quiet HEAD
 then
