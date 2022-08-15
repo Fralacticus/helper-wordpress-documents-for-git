@@ -3,7 +3,7 @@
 #########
 # Affiche chaque commande exécutée avec ses arguments
 # Sort du script dès qu’une erreur est rencontrée (retour différent de 0)
-set -xe
+set -e
 
 echo "------- Début du script --------"
 
