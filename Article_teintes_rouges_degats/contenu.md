@@ -1,6 +1,6 @@
 <DIV STYLE="display:block;white-space:pre;background-color:#FAFAFA;font-family:'Consolas',monospace;font-size:10pt;padding:4px;overflow:auto" class="montab"><BR><SPAN STYLE="color:#383A42;background-color:#FAFAFA;">degats256bi:<BR>  0 </SPAN><SPAN STYLE="color:#FF00FF;background-color:#FAFAFA;">■ </SPAN><SPAN STYLE="color:#383A42;background-color:#FAFAFA;">FF00FF      0 </SPAN><SPAN STYLE="color:#FF00FF;background-color:#FAFAFA;">■ </SPAN><SPAN STYLE="color:#383A42;background-color:#FAFAFA;">FF00FF      0 </SPAN><SPAN STYLE="color:#FF00FF;background-color:#FAFAFA;">■ </SPAN><SPAN STYLE="color:#383A42;background-color:#FAFAFA;">FF00FF<BR>  1 </SPAN><SPAN STYLE="color:#000000;background-color:#FAFAFA;">■ </SPAN><SPAN STYLE="color:#383A42;background-color:#FAFAFA;">000000     33 </SPAN><SPAN STYLE="color:#AF0000;background-color:#FAFAFA;">■ </SPAN><SPAN STYLE="color:#383A42;background-color:#FAFAFA;">C60000     62 </SPAN><SPAN STYLE="color:#000000;background-color:#FAFAFA;">■ </SPAN><SPAN STYLE="color:#383A42;background-color:#FAFAFA;">311000<BR>  2 </SPAN><SPAN STYLE="color:#FFFFFF;background-color:#FAFAFA;">■ </SPAN><SPAN STYLE="color:#383A42;background-color:#FAFAFA;">FFFFFF     34 </SPAN><SPAN STYLE="color:#FF0000;background-color:#FAFAFA;">■ </SPAN><SPAN STYLE="color:#383A42;background-color:#FAFAFA;">FF3131    214 </SPAN><SPAN STYLE="color:#FFAFAF;background-color:#FAFAFA;">■ </SPAN><SPAN STYLE="color:#383A42;background-color:#FAFAFA;">FFBDAD<BR>  3 </SPAN><SPAN STYLE="color:#FF0000;background-color:#FAFAFA;">■ </SPAN><SPAN STYLE="color:#383A42;background-color:#FAFAFA;">FF0000      3 </SPAN><SPAN STYLE="color:#FF0000;background-color:#FAFAFA;">■ </SPAN></DIV>
 
-![pigeon](https://raw.githubusercontent.com/Fralacticus/articles_md/main/Article_teintes_rouges_degats/assets/pigeon2.png "coucou")  
+![pigeon](https://raw.githubusercontent.com/Fralacticus/testmarkdown/main/Article_teintes_rouges_degats/assets/pigeon2.png "coucou")  
 
 ```dart
 int adresseNouveauSprite = 0x7b89c0;
@@ -11,7 +11,7 @@ String nomBaseFichierSprite = "${adresseSpriteGokuBlesse_Debut.toRadixString(16)
 
 ![pigeon](https://raw.githubusercontent.com/Fralacticus/articles_md/main/Article_teintes_rouges_degats/assets/pigeon2.png )   ![pigeon](https://raw.githubusercontent.com/Fralacticus/articles_md/main/Article_teintes_rouges_degats/assets/pigeon2.png)
 
-<img title="uni"  src="https://raw.githubusercontent.com/Fralacticus/articles_md/main/Article_teintes_rouges_degats/assets/pigeon2.png" alt="pigeon" width="77">   <img title="uni"  src="https://raw.githubusercontent.com/Fralacticus/articles_md/main/Article_teintes_rouges_degats/assets/pigeon2.png" alt="pigeon" width="77">
+<img title="uni"  src="https://raw.githubusercontent.com/Fralacticus/testmarkdown/main/Article_teintes_rouges_degats/assets/pigeon2.png" alt="pigeon" width="77">   <img title="uni"  src="https://raw.githubusercontent.com/Fralacticus/testmarkdown/main/Article_teintes_rouges_degats/assets/pigeon2.png" alt="pigeon" width="77">
 
 | Adressse     | Valeur       | Animation        |
 | ------------ | ------------ | ---------------- |
