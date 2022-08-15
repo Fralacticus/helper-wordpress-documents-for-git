@@ -8,8 +8,8 @@ on:
   # 3- Par des fichiers qui ont le chemin joker définit dans paths
   push:
     branches: [ "main" ]
-    paths:
-      - '**/*_brut.md'
+    #paths:
+      #- '**/*_brut.md'
 
 
   # Permet de lancer le workflow manuellement depuis la page Actions
