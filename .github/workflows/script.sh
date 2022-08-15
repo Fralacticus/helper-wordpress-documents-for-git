@@ -5,6 +5,10 @@
 # also exit on any error
 set -xe
 
+for i in $(find . -name '*_brut.md') ; do
+  echo "$i"
+done
+
 cd $1
 (
 cat $1 |  echo
