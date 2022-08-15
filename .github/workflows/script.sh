@@ -16,7 +16,7 @@ nouveau='https://raw.githubusercontent.com/Fralacticus/articles_md/main/$(dirnam
 echo "partie principale: "
 #cd $1
 cat $1 | \
-  sed "s/$ancien/$nouveau/g"  \
+  sed "s/$ancien/$nouveau//g"  \
   > $2
 
 git config --global user.email "fralacticus@gmail.com"
