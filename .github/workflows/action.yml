@@ -57,7 +57,7 @@ jobs:
           else
             listeFichiers=$(cd ${{ github.workspace }} && find * -type f -name "*_brut.md" ; )
           fi
-          for file in listeFichiers; do
+          for file in $listeFichiers; do
             echo "################ TRAITEMENT DU FICHIER $file ################"   
             chmod +x "${GITHUB_WORKSPACE}/.github/workflows/script.sh"
             ${GITHUB_WORKSPACE}/.github/workflows/script.sh "$file" "$(echo $file | sed "s/_brut//g")"
