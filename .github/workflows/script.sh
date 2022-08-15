@@ -10,11 +10,13 @@ set -xe
   #echo "dossier : $(dirname $i)"
 #done
 
+ancien = "(assets/"
+nouveau = "https://raw.githubusercontent.com/Fralacticus/articles_md/main/$(dirname $1)/assets/)
 
 echo "partie principale: "
 #cd $1
 cat $1 | \
-  sed 's/\(assets\//https:\/\/raw.githubusercontent.com\/Fralacticus\/articles_md\/main/$(dirname $1)/assets\/)/g' | \
+  sed 's/$ancien/$nouveau/g'  \
   > $2
 
 git config --global user.email "fralacticus@gmail.com"
