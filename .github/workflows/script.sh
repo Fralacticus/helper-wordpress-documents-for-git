@@ -7,6 +7,7 @@ set -xe
 
 for i in $(find . -name '*_brut.md') ; do
   echo "$i"
+  echo "
 done
 
 cd $1
