@@ -31,6 +31,7 @@ jobs:
           
       # Vérifie les fichiers qui ont changées (<=> ajoutés, copiés, modifiés et renommés)
       - name: Obtention des fichiers changés
+        if: ${{ github.event_name == 'push' }}
         id: changed-files
         uses: tj-actions/changed-files@v26.1       
         with:
@@ -40,6 +41,7 @@ jobs:
             
 
       - name: Traitement de tous les fichiers changés
+        if: ${{ github.event_name == 'push' }}
         run: |
           for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
             echo "################ TRAITEMENT DU FICHIER $file ################"   
