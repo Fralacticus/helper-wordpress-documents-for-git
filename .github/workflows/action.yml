@@ -58,3 +58,9 @@ jobs:
           #find ${{ github.workspace }} -type f 
           listeFic=$(cd ${{ github.workspace }} && find * -type f -name "*_brut.md" ; )
           echo $listeFic
+          if [ ${{ github.event_name == 'push' }} ]
+          then
+            echo "de push"
+          else
+            echo "de manuel"
+          fi
