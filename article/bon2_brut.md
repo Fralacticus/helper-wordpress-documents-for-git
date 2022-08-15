@@ -13,7 +13,7 @@ yy
 eeereei
 
 er'dç
-rddee(
+rddee(r
 77777rruu_ ![pigeon](https://raw.githubusercontent.com/Fralacticus/articles_md/main/Article_teintes_rouges_degats/assets/pigeon2.png)
 edrre__
 e'__ee""
