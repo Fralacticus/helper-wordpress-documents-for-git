@@ -9,7 +9,7 @@ on:
   push:
     branches: [ "main" ]
     #paths:
-      #- '**/*_brut.md'  
+      #- '**/*_brut.md'
 
 
   # Permet de lancer le workflow manuellement depuis la page Actions
