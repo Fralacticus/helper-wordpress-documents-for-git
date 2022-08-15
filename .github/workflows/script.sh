@@ -13,11 +13,11 @@ set -xe
 ancien='(assets/'
 nouveau='https://raw.githubusercontent.com/Fralacticus/articles_md/main/$(dirname $1)/assets/'
 
+# Notice sed -> s/motif/substitut/g
+
 echo "partie principale: "
 #cd $1
-cat $1 | \
-  sed "s/$ancien/$nouveau//g"  \
-  > $2
+cat $1 | sed "s/$ancien/$nouveau/g" > $2
 
 git config --global user.email "fralacticus@gmail.com"
 git config --global user.name "fralacticus"
