@@ -29,7 +29,9 @@ git add $destFic
 if ! git diff-index --quiet HEAD
 then
   echo "On passe le commit"
+  echo "Commit:"
   git commit -m "Mise à jour le $(date)"
+  echo "Push"
   git push origin main
 else
   echo "On ne passe pas le commit, car aucune différence"  
