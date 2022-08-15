@@ -3,7 +3,7 @@
 eeuu
 88
 77
-oo
+oor
 ee
 ere
 ''8(
