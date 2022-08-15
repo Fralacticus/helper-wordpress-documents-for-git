@@ -38,12 +38,26 @@ jobs:
           files: | 
             **/*_brut.md
           since_last_remote_commit: "true"
+          
+      - name: Listage de tous les fichier du dépôt avec le nom *_brut.md
+        if: ${{ github.event_name != 'push' }}
+        run: |
+          #ls ${{ github.workspace }}
+          #find ${{ github.workspace }} -type f 
+          listeFic=$(cd ${{ github.workspace }} && find * -type f -name "*_brut.md" ; )
+          echo $listeFic
+          
             
 
-      - name: Traitement de tous les fichiers changés
-        if: ${{ github.event_name == 'push' }}
+      - name: Traitement de tous les fichiers changés       
         run: |
-          for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
+          if [ ${{ github.event_name == 'push' }} ]
+          then
+            listeFichiers=${{ steps.changed-files.outputs.all_changed_files }}
+          else
+            listeFichiers=$(cd ${{ github.workspace }} && find * -type f -name "*_brut.md" ; )
+          fi
+          for file in listeFichiers; do
             echo "################ TRAITEMENT DU FICHIER $file ################"   
             chmod +x "${GITHUB_WORKSPACE}/.github/workflows/script.sh"
             ${GITHUB_WORKSPACE}/.github/workflows/script.sh "$file" "$(echo $file | sed "s/_brut//g")"
@@ -52,15 +66,4 @@ jobs:
           
           
           
-      - name: List files in the repository
-        run: |
-          #ls ${{ github.workspace }}
-          #find ${{ github.workspace }} -type f 
-          listeFic=$(cd ${{ github.workspace }} && find * -type f -name "*_brut.md" ; )
-          echo $listeFic
-          if [ ${{ github.event_name == 'push' }} ]
-          then
-            echo "de push"
-          else
-            echo "de manuel"
-          fi
+
