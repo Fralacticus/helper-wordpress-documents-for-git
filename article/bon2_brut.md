@@ -11,11 +11,11 @@ ere
 rr-
 yy
 eeereei
-salut (assets/o
+
 er'dç
 rddee(
 77777rruu_ ![pigeon](https://raw.githubusercontent.com/Fralacticus/articles_md/main/Article_teintes_rouges_degats/assets/pigeon2.png)
-edrre
+edrre__
 e'__ee""
 ![pigeon](assets/pigeon2.png "coucou") 
 r
